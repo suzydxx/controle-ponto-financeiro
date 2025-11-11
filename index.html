@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Controle de Ponto - Zona Sul</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>CONTROLE DE PONTO E FINANCEIRO</h1>
+    <div class="logo">🧊 GELO ZONA SUL</div>
+  </header>
+
+  <div class="info">
+    <label>Mês: <input type="text" id="mes"></label>
+    <label>Funcionário: <input type="text" id="funcionario" value="Wander"></label>
+  </div>
+
+  <h2>Controle de Ponto</h2>
+  <table id="ponto">
+    <thead>
+      <tr>
+        <th>Dia</th>
+        <th>Entrada</th>
+        <th>Saída Almoço</th>
+        <th>Retorno</th>
+        <th>Status</th>
+        <th>Desconto (R$)</th>
+        <th>Selecionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Linhas geradas pelo JS -->
+    </tbody>
+  </table>
+
+  <h2>Controle Financeiro</h2>
+  <div class="financeiro">
+    <div>Salário Base 1ª Quinzena: R$ 350,00</div>
+    <div>Salário Base 2ª Quinzena: R$ 350,00</div>
+    <div>Vales/Adiantamentos: R$ <input type="number" id="vales1" value="0" step="0.01"></div>
+    <div>Vales/Adiantamentos: R$ <input type="number" id="vales2" value="0" step="0.01"></div>
+    <div>Total 1ª Quinzena: R$ <span id="total1">0.00</span></div>
+    <div>Total 2ª Quinzena: R$ <span id="total2">0.00</span></div>
+    <div>Total Geral: R$ <span id="totalGeral">0.00</span></div>
+  </div>
+</div>
+</body>
+</html>
+
